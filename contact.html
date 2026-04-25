@@ -4,49 +4,73 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Goldwing Pickup</title>
+  <meta name="description" content="Contact Goldwing Pickup for cleanout and debris removal services." />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="light-page">
 
-  <header class="site-header light-header">
-    <a href="index.html" class="logo">GOLDWINGPICKUP</a>
+<body class="light-body">
+
+  <header class="header header-light">
+    <a class="brand" href="index.html">GOLDWINGPICKUP</a>
+
+    <nav class="nav light-nav">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main class="split-page">
-    <section class="form-section">
-      <h1>READY FOR US TO<br>CLEANOUT?</h1>
-      <p>Complete the form now. Our specialists will be in contact.</p>
+  <main class="contact-layout">
 
-      <form action="https://formsubmit.co/cleanout@goldwingpickup.com" method="POST">
-        <input type="hidden" name="_subject" value="New Goldwing Pickup Cleanout Request">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-
-        <label>Name</label>
-
-        <div class="name-row">
-          <div>
-            <small>First Name (required)</small>
-            <input type="text" name="First Name" required>
-          </div>
-
-          <div>
-            <small>Last Name (required)</small>
-            <input type="text" name="Last Name" required>
-          </div>
+    <section class="contact-left">
+      <div class="contact-content">
+        <div class="page-heading">
+          <h1>READY FOR US TO<br>CLEANOUT?</h1>
+          <p>Complete the form now. Our specialists will be in contact.</p>
         </div>
 
-        <small>Email (required)</small>
-        <input type="email" name="Email" required>
+        <form class="contact-form" action="https://formsubmit.co/cleanout@goldwingpickup.com" method="POST">
+          <input type="hidden" name="_subject" value="New Goldwing Pickup Cleanout Request">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
 
-        <small>Message (required)</small>
-        <textarea name="Message" required></textarea>
+          <input type="text" name="_honey" style="display:none">
 
-        <button type="submit">SEND</button>
-      </form>
+          <label>Name</label>
+
+          <div class="name-grid">
+            <div class="field">
+              <small>First Name (required)</small>
+              <input type="text" name="First Name" required>
+            </div>
+
+            <div class="field">
+              <small>Last Name (required)</small>
+              <input type="text" name="Last Name" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <small>Email (required)</small>
+            <input type="email" name="Email" required>
+          </div>
+
+          <div class="field">
+            <small>Phone</small>
+            <input type="tel" name="Phone">
+          </div>
+
+          <div class="field">
+            <small>Message (required)</small>
+            <textarea name="Message" required></textarea>
+          </div>
+
+          <button type="submit">SEND</button>
+        </form>
+      </div>
     </section>
 
-    <section class="image-section contact-image"></section>
+    <section class="contact-right" aria-label="Stacked paperwork image"></section>
+
   </main>
 
 </body>
