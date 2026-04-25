@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Goldwing Pickup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-page">
+
+  <header class="site-header light-header">
+    <a href="index.html" class="logo">GOLDWINGPICKUP</a>
+  </header>
+
+  <main class="split-page">
+    <section class="form-section">
+      <h1>READY FOR US TO<br>CLEANOUT?</h1>
+      <p>Complete the form now. Our specialists will be in contact.</p>
+
+      <form action="https://formsubmit.co/cleanout@goldwingpickup.com" method="POST">
+        <input type="hidden" name="_subject" value="New Goldwing Pickup Cleanout Request">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <label>Name</label>
+
+        <div class="name-row">
+          <div>
+            <small>First Name (required)</small>
+            <input type="text" name="First Name" required>
+          </div>
+
+          <div>
+            <small>Last Name (required)</small>
+            <input type="text" name="Last Name" required>
+          </div>
+        </div>
+
+        <small>Email (required)</small>
+        <input type="email" name="Email" required>
+
+        <small>Message (required)</small>
+        <textarea name="Message" required></textarea>
+
+        <button type="submit">SEND</button>
+      </form>
+    </section>
+
+    <section class="image-section contact-image"></section>
+  </main>
+
+</body>
+</html>
