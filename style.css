@@ -78,6 +78,7 @@ a {
 
 .home-hero {
   min-height: 100vh;
+  min-height: 100dvh;
   background-image: url("hero-truck.png");
   background-size: cover;
   background-position: center center;
@@ -86,11 +87,12 @@ a {
 
 .home-shade {
   min-height: 100vh;
+  min-height: 100dvh;
   background: rgba(0, 0, 0, 0.54);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 24px 40px;
+  padding: 105px 24px 22px;
 }
 
 .home-center {
@@ -103,7 +105,7 @@ a {
 }
 
 .home-title {
-  margin: 0 0 32px;
+  margin: 0 0 24px;
   color: var(--white);
   text-align: center;
   width: 100%;
@@ -111,19 +113,19 @@ a {
 
 .home-title span {
   display: block;
-  font-size: clamp(70px, 6.6vw, 122px);
-  line-height: 0.9;
+  font-size: clamp(54px, 5.4vw, 94px);
+  line-height: 0.88;
   font-weight: 900;
   text-align: center;
   white-space: nowrap;
 }
 
 .home-intro {
-  margin: 0 auto 22px;
+  margin: 0 auto 18px;
   max-width: 950px;
   color: var(--white);
-  font-size: 20px;
-  line-height: 1.35;
+  font-size: 18px;
+  line-height: 1.25;
   font-weight: 700;
   text-align: center;
 }
@@ -131,22 +133,22 @@ a {
 .home-list {
   list-style-position: inside;
   padding: 0;
-  margin: 0 auto 145px;
+  margin: 0 auto 34px;
   color: var(--white);
   text-align: center;
 }
 
 .home-list li {
-  margin: 10px 0;
-  font-size: 20px;
-  line-height: 1.35;
+  margin: 7px 0;
+  font-size: 18px;
+  line-height: 1.25;
   font-weight: 700;
   text-align: center;
 }
 
 .home-button {
-  width: 330px;
-  height: 92px;
+  width: 300px;
+  height: 78px;
   border-radius: 60px;
   background: var(--green);
   color: var(--white);
@@ -154,7 +156,7 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 900;
   letter-spacing: 2px;
   margin: 0 auto;
@@ -446,9 +448,14 @@ button:hover {
     font-size: 42px;
   }
 
-  .home-intro,
+  .home-intro {
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
   .home-list li {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 1.35;
   }
 
   .home-list {
@@ -531,8 +538,16 @@ button:hover {
     font-size: 34px;
   }
 
-  .home-intro,
-  .home-list li,
+  .home-intro {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .home-list li {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
   .page-heading p,
   .about-content p {
     font-size: 12px;
